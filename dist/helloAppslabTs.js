@@ -1,8 +1,5 @@
-function multiplyByLength(array) {
-    for (let i = 0; i < array.length; i++) {
-        array[i] = array[i] * array.length;
-    }
-    return array;
+function slices(totalSlices, recipients, slices) {
+    return recipients * slices <= totalSlices;
 }
-console.log(multiplyByLength([2, 3, 1, 0]));
+console.log(slices(11, 5, 3));
 //# sourceMappingURL=helloAppslabTs.js.map

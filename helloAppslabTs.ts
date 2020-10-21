@@ -1,9 +1,5 @@
-function multiplyByLength(array)
+function slices(totalSlices:number, recipients:number, slices:number):boolean
 {
-    for (let i = 0; i < array.length; i++) 
-   {
-        array[i] = array[i] * array.length;
-   }
- return array;
+    return recipients * slices <= totalSlices;
 }
-console.log(multiplyByLength([2,3,1,0]))
+console.log(slices(11, 5, 3))
