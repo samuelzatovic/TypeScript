@@ -1,5 +1,9 @@
-function triangle(a:number, b:number, c:number):boolean
+function multiplyByLength(array)
 {
-    return (a + b > c);
+    for (let i = 0; i < array.length; i++) 
+   {
+        array[i] = array[i] * array.length;
+   }
+ return array;
 }
-console.log(triangle(2,3,4))
+console.log(multiplyByLength([2,3,1,0]))

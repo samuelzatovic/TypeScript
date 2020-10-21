@@ -1,5 +1,8 @@
-function triangle(a, b, c) {
-    return (a + b > c);
+function multiplyByLength(array) {
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i] * array.length;
+    }
+    return array;
 }
-console.log(triangle(2, 3, 4));
+console.log(multiplyByLength([2, 3, 1, 0]));
 //# sourceMappingURL=helloAppslabTs.js.map
