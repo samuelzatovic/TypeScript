@@ -1,12 +1,5 @@
-function equality(a, b, c) {
-    if (a == b || a == c) {
-        if (b == c)
-            return 3;
-        return 2;
-    }
-    if (b == c)
-        return 2;
-    return 0;
+function triangle(a, b, c) {
+    return (a + b > c);
 }
-console.log(equality(3, 4, 5));
+console.log(triangle(2, 3, 4));
 //# sourceMappingURL=helloAppslabTs.js.map

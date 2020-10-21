@@ -1,10 +1,5 @@
-function equality(a:number, b:number, c:number):number
+function triangle(a:number, b:number, c:number):boolean
 {
-    if(a == b || a == c){
-        if(b == c) return 3;
-        return 2;}
-
-    if(b == c) return 2;
-    return 0;
+    return (a + b > c);
 }
-console.log(equality(3,4,5))
+console.log(triangle(2,3,4))
