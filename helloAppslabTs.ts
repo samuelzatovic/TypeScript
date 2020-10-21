@@ -1,5 +1,12 @@
-function slices(totalSlices:number, recipients:number, slices:number):boolean
+function isPalindrome(palindrome:string):boolean
 {
-    return recipients * slices <= totalSlices;
+    let i = 0, j = palindrome.length - 1;
+        while (i < j) {
+            if (palindrome.charAt(i) != palindrome.charAt(j))
+                return false;
+            i++;
+            j--;
+        }
+        return true;
 }
-console.log(slices(11, 5, 3))
+console.log(isPalindrome("reviver"))
