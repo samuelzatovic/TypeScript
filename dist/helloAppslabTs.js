@@ -1,20 +1,15 @@
-function rps(player1, player2) {
-    if (player1 == player2) {
-        return "TIE";
+function differenceMaxMin(array) {
+    var temp = 0;
+    for (var i = 0; i < array.length; i++) {
+        for (var j = i; j < array.length; j++) {
+            if (array[j] < array[i]) {
+                temp = array[j];
+                array[j] = array[i];
+                array[i] = temp;
+            }
+        }
     }
-    if (player1 == "rock" && (player2) == "paper")
-        return "PLAYER 2 WINS";
-    if (player1 == "rock" && player2 == "scissors")
-        return "PLAYER 1 WINS";
-    if (player1 == "paper" && player2 == "rock")
-        return "PLAYER 1 WINS";
-    if (player1 == "paper" && player2 == "scissors")
-        return "PLAYER 2 WINS";
-    if (player1 == "scissors" && player2 == "rock")
-        return "PLAYER 2 WINS";
-    if (player1 == "scissors" && player2 == "paper")
-        return "PLAYER 1 WINS";
-    return "INVALID INPUT";
+    return array[array.length - 1] - array[0];
 }
-console.log(rps("rock", "scissors"));
+console.log(differenceMaxMin([10, 4, 1, 4, -10, -50, 32, 21]));
 //# sourceMappingURL=helloAppslabTs.js.map
