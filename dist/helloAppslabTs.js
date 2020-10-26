@@ -1,5 +1,5 @@
-function checkEnding(a, b) {
-    return (a.endsWith(b));
+function rook(a, b) {
+    return a.charAt(0) == b.charAt(0) || a.charAt(1) == b.charAt(1);
 }
-console.log(checkEnding("ahoj", "oj"));
+console.log(rook("H4", "G2"));
 //# sourceMappingURL=helloAppslabTs.js.map
