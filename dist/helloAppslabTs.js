@@ -1,22 +1,5 @@
-function isNumOdd(num) {
-    return num % 2 !== 0;
+function checkEnding(a, b) {
+    return (a.endsWith(b));
 }
-;
-function warOfNumbers(numbers) {
-    var even = 0;
-    var odd = 0;
-    for (var i = 0; i < numbers.length; i++) {
-        var number = numbers[i];
-        {
-            if (isNumOdd(number)) {
-                odd += number;
-            }
-            else {
-                even += number;
-            }
-        }
-    }
-    return Math.abs(even - odd);
-}
-console.log(warOfNumbers([1, 4, 2, 3, 19, 28, 142, 333]));
+console.log(checkEnding("ahoj", "oj"));
 //# sourceMappingURL=helloAppslabTs.js.map
