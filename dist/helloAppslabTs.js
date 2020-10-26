@@ -1,15 +1,21 @@
-function differenceMaxMin(array) {
-    var temp = 0;
-    for (var i = 0; i < array.length; i++) {
-        for (var j = i; j < array.length; j++) {
-            if (array[j] < array[i]) {
-                temp = array[j];
-                array[j] = array[i];
-                array[i] = temp;
+function isNumOdd(num) {
+    return num % 2 !== 0;
+}
+;
+function warOfNumbers(numbers) {
+    var even = 0;
+    var odd = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        var number = numbers[i];
+        {
+            if (isNumOdd(number)) {
+                odd += number;
+            }
+            else {
+                even += number;
             }
         }
     }
-    return array[array.length - 1] - array[0];
+    return Math.abs(even - odd);
 }
-console.log(differenceMaxMin([10, 4, 1, 4, -10, -50, 32, 21]));
 //# sourceMappingURL=helloAppslabTs.js.map
