@@ -17,3 +17,4 @@ function warOfNumbers(numbers) {
   }
   return Math.abs(even - odd);
 }
+console.log(warOfNumbers([1, 4, 2, 3, 19, 28, 142, 333]))
